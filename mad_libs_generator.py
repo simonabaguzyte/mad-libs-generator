@@ -47,16 +47,15 @@ while shouldContinue:
               f"was not at home - that day she had {activity} practice. Little girl {name1} was so tired and upset " +\
               f"that she took {number} bottles of {beverage} and drank every last sip of it. After a good nap the girl went back home.")
 
-    shouldContinue2 = True
-    while shouldContinue2:
+    while True:
         answer = input("\n\nWould you like to try again (Y/N)? ").lower()
 
         if answer == 'y' or answer == 'yes':
-            shouldContinue2 = False
+            break
         elif answer == 'n' or answer == 'no':
             print("Thank you for using my program!")
-            shouldContinue2 = False
             shouldContinue = False
+            break
         else:
             print("Please, check your input and try again:")
         
